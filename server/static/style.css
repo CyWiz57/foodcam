@@ -1,7 +1,7 @@
 .result .image {
     max-width: 33%px;
     height: 250px;
-    background-image: url("test.jpg");
+    background-image: url("https://unsplash.com/photos/IGfIGP5ONV0");
     background-size: cover;
     background-position: center;
 }
