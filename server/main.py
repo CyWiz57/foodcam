@@ -1,7 +1,9 @@
 from flask import Flask, request
 from flask_cors import CORS
 from flask import render_template
+
 from fastai.vision.all import *
+
 
 #Labeling function required for load_learner to work
 def GetLabel(fileName):
@@ -19,7 +21,7 @@ def index():
 def predict():
     img = PILImage.create(request.files['file'])
     label,_,probs = learn.predict(img)
-    return f'{label} ({torch.max(probs).item()*100:.0f}%)'
+    return print("hello world!") #f'{label} ({torch.max(probs).item()*100:.0f}%)'
 
 if __name__=='__main__':
     app.run(host="0.0.0.0", port=5000)
