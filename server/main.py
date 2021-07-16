@@ -1,7 +1,7 @@
 from flask import Flask, request
 from flask_cors import CORS
 from flask import render_template
-
+import torchvision.transforms.functional as F
 from fastai.vision.all import *
 
 
@@ -20,6 +20,7 @@ def index():
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
     img = Image.open(request.files['file'].stream)
+    img = F.to_pil_image(img)
     label,_,probs = learn.predict(img)
     return f'{label} ({torch.max(probs).item()*100:.0f}%)'
 
