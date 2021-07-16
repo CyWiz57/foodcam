@@ -20,7 +20,7 @@ def index():
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
     img = PILImage.create(request.files['file'])
-    # label,_,probs = learn.predict(img)
+    label,_,probs = learn.predict(img)
     return f'{label} ({torch.max(probs).item()*100:.0f}%)'
 
 if __name__=='__main__':
