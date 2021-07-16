@@ -19,7 +19,7 @@ def index():
 
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
-    img = PILImage.create(request.files['file'])
+    img = Image.open(request.files['file'].stream)
     label,_,probs = learn.predict(img)
     return f'{label} ({torch.max(probs).item()*100:.0f}%)'
 
