@@ -2,6 +2,7 @@ from flask import Flask, request
 from flask_cors import CORS
 from flask import render_template
 from fastai.vision.all import *
+from PIL import PILImage 
 
 #Labeling function required for load_learner to work
 def GetLabel(fileName):
