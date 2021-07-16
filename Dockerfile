@@ -8,4 +8,4 @@ COPY server server/
 
 EXPOSE 5000
 
-CMD ["python","flask","run", "server/main.py"]
+CMD ["python", "server/main.py"]
