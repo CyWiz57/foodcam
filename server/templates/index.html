@@ -15,25 +15,33 @@
 
 <body>
 
+    <header>
+        <h2><a href="#">Connoisseur</a></h2>
+        <nav>
+          <li><a href="#">Cuisine</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </nav>
+      </header>
+    
+      <section class="hero">
+        <div class="background-image" style="background-image: url(main.jpg);"></div>
+        <div class="hero-content-area">
+          <h1>Connoisseur</h1>
+          <h3>Unmissable Food Adventure Around The World</h3>
+          <a href="#" class="btn">Contact Us Now</a>
+        </div>
+      </section>
+
     <div class="container">
         <div class="row">
             <h1 class="display-1">FoodCam <i class="fas fa-utensils"></i></h1>
         </div>
-        <!-- <div class="row">
-            <i><p>"People who love to eat are always the best people." <b>- Julia Child</b></p</i>
-        </div> -->
-        <!-- <div>
-            <b><p>'Beef Tartare', 'Churros', 'Greek Salad', 'Hot and Sour Soup', 'Panna Cotta', 'Pork Chop', 'Samosa', 'Sashimi', 'Spring Rolls'</p></b>
-        </div> -->
-        <!-- <div class="row">
-            <p>Built with PyTorch/FastAI. Just upload an image from your computer and
-                it will be classified.
-            </p>
-
-        </div> -->
+      
         <div class="row">
             <h2>Uploader</h2>
         </div>
+
         <div class="row">
             <img id="uploadedImg">
         </div>
@@ -44,24 +52,27 @@
                 <input type="file" name="file" required />
                 <input type="submit" value="Classify!" />
             </form>
-    
         </div>
+
         <div class="row">
-   
             <h2>Results:</h2>
             <div id="loader" class="lds-dual-ring"></div>
         </div>
+
         <div id="results" class="grid-container">
         </div>
+
     </div>
 
-
     <footer>
-        <p>
-            
-        </p>
-
-    </footer>
+        <!-- <p>Images courtesy of <a href="http://unsplash.com/">unsplash</a>.</p>
+        <p>Why are you even reading this?! There's never anything interesting in the footer!</p> -->
+        <ul>
+          <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa fa-snapchat-square fa-2x"></i></a></li>
+        </ul>
+      </footer>
 
     <script src="../static/main.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
