@@ -110,11 +110,13 @@ header {
 
 header h2 {
 	font-family: "Quicksand", sans-serif;
+	font-size: 1.5em;
 }
 
 header nav {
 	display: flex;
 	margin-right: -15px;
+	font-size: .8em;
 }
 
 header nav li {
@@ -320,11 +322,13 @@ footer {
 	justify-content: space-around;
 	background-color: #ff385c;
 	color: #fff;
-	padding: 20px 0;
+	padding: 10px 0;
 }
 
 footer ul {
 	display: flex;
+	padding-bottom: 0vh;
+	margin-bottom: 0vh;
 }
 
 footer ul li {
@@ -333,9 +337,11 @@ footer ul li {
 
 footer p {
 	text-transform: uppercase;
-	font-size: 10px;
+	font-weight: 500;
+	font-size: 15px;
 	opacity: 0.6;
 	align-self: center;
+	color: white;
 }
 
 @media (max-width: 1100px) {
@@ -343,10 +349,10 @@ footer p {
 		flex-direction: column;
 	}
 
-	/* footer p {
+	footer p {
 		text-align: center;
 		margin-bottom: 20px;
-	} */
+	}
 
 	footer ul li {
 		margin: 0 8px;
