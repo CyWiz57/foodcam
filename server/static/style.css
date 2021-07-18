@@ -358,3 +358,12 @@ footer p {
 		margin: 0 8px;
 	}
 }
+
+.row {
+	padding: 10px 10px 10px 10px;
+}
+
+.pictures {
+	color: black;
+	font-size: 20px;
+}
